@@ -1,21 +1,16 @@
-
-//components
-import Box1 from "./components/Box1";
+import { Component } from 'react';
 
 
-//صفحه اصلی شروع
-function App() {
-  let now = new Date().toISOString(); 
-
-  return (                 /* 20 or "20px" */
-  <main style={{fontSize: "20px"}}>
-    <Box1 now = {now} info={{ age: 30, name: 'hasan'}}/>   
-
-
-   
-  
-  </main>
-  );
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <>
+        <h1>Hello world</h1>
+        <h2>This is react</h2>
+      </>
+    );
+  }
 }
 
-export default App
+export default App;
